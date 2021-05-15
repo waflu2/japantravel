@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+          content="width=device-width, height=device-height, 
+                     minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
+    <title>Insert title here</title>
+    <style>
+        .paging {
+            text-align: center;
+        }
+        .paging a {
+            /*
+            display: inline-block 인라인 요소의 특징과 블록 요소의 특징을 모두 갖는다
+            크기를 가질 수 있으며 텍스트 정렬도 적용받는다
+            */
+            display: inline-block;
+            
+            font-weight: bold;
+            text-decoration: none;
+            padding: 5px 8px;
+            border: 1px solid #ccc;
+            color: #000;
+            background-color: #F5F5DC;
+        }
+        /* 현재 페이징에 select 클래스를 적용한다*/
+        .paging a.select {
+            color: #fff;
+            background-color: #FFA7A7;
+        }
+        .price{
+            color:lavender;
+        }
+        .warning{
+            color:red;
+        }
+    </style>
+</head>
+ 
+<body>
+    <img src="img/1.PNG">
+    <h1>도쿄국제공항 ▶ 호텔 오리엔탈 익스프레스 도쿄 카마타</h1>
+    <h2 class="price">드는 총 비용 : 1박 요금 36216원 (항공비 미포함, 수수료, 부가세 미포함)</h2>
+    <h3 class="warning">주의 : 야간에 치안이 좋지 않은 도시다.</h3>
+    <img src="img/3.PNG">
+    <h4>참고 : 치안이 좋지 않다는것은 개인차이로, 돈이 들더라도 다른 호텔을 찾아봐도 좋다.
+        하지만, 사이타마의 호텔가격은 상당히 높다고 예상한다.
+    </h4>
+    <div class="paging"></div>
+        <a class="select" href="#">공항도착</a>
+        <a href="two.html">1번째 날</a>
+        <a href="three.html">2번째 날</a>
+        <a href="airplane.html">3번째 날~공항</a>
+
+    </div>
+</body>
+</html>
+
